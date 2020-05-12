@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title> KB REPARATOR </title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <script>
+        function myMap(){
+        var mapProp= {
+          center:new maps.LatLng(59.2198,17.9467),
+          zoom:5,
+        };
+        var map = new maps.Map(document.getElementById("Map"),mapProp);
+        }
+    </script>
+</head>
+<body>
+
+    <div class="main">
+        <ul>
+            <li><a href="index.html"> Hem </a></li>
+            <li class="active"><a href="contact.html"> Kontakta Oss </a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <h1> Kontakta Oss </h1>
+        <p> Skriv din ansökan nedan </p>
+    </div>
+
+    <div class="navbar">
+    </div>
+
+    <div class="container">
+        <div style="text-align:center">
+          <h2></h2>
+          <p></p>
+        </div>
+
+        <iframe src="https://www.mapquest.com/directions/from/se/stockholm/to/se/flemingsberg" width="50%" height="550" allowfullscreen></iframe>
+
+        <div class="column">
+            <form class="contact-form" action="contactform.php" method="post">
+              <label for="name"> För & Efternamn * </label>
+              <input type="text" id="name" name="name" placeholder="Ditt namn..">
+
+              <label for="mail"> E-mail * </label>
+              <input type="text" id="mail" name="mail" placeholder="Din e-mail..">
+
+              <label for="subject"> Ämne * </label>
+              <input type="text" id="subject" name="subject" placeholder="Ämne..">
+
+              <label for="message"> Meddelande * </label>
+              <textarea id="message" name="message" placeholder="Skriv här.." style="height:170px"></textarea>
+              <input type="submit" value="Skicka">
+            </form>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2> KB REPARATÖR ® EST.2020 </h2>
+    </div>
+
+</body>
+</html>
